@@ -1,6 +1,6 @@
 resource "null_resource" "test1" {
   provisioner "local-exec" {
-    command = "ibmcloud login -a https://cloud.ibm.com"
+    command = "ibmcloud oc cluster ls"
     interpreter = ["/bin/bash", "-c"]
   }
 }
